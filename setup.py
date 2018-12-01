@@ -10,7 +10,7 @@ import versioneer
 min_version = (3, 6)
 if sys.version_info < min_version:
     error = """
-xpboost does not support Python {0}.{1}.
+expall does not support Python {0}.{1}.
 Python {2}.{3} and above is required. Check your Python version like so:
 
 python3 --version
@@ -34,14 +34,14 @@ with open(path.join(here, 'requirements.txt')) as requirements_file:
 
 
 setup(
-    name='xpboost',
+    name='expall',
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     description="Predicting protein expression from primary sequence with techniques from NLP.",
     long_description=readme,
     author="Rune Bio",
     author_email='jsmith07@uw.edu',
-    url='https://github.com/anotherjoshsmith/xpboost',
+    url='https://github.com/anotherjoshsmith/expall',
     packages=find_packages(exclude=['docs', 'tests']),
     entry_points={
         'console_scripts': [
@@ -50,7 +50,7 @@ setup(
         },
     include_package_data=True,
     package_data={
-        'xpboost': [
+        'expall': [
             # When adding files here, remember to update MANIFEST.in as well,
             # or else they will not be included in the distribution on PyPI!
             # 'path/to/data_file',
