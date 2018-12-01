@@ -1,4 +1,4 @@
-from .version import __version__
-from .data_processing import *
 
-#__all__ = [__version__, predict]
+from ._version import get_versions
+__version__ = get_versions()['version']
+del get_versions
